@@ -1,0 +1,11 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# uv, poetry, claude and other user-installed CLIs
+export PATH="$HOME/.local/bin:$PATH"
+
+# Obsidian CLI
+[ -d "/Applications/Obsidian.app/Contents/MacOS" ] && export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
+
+# Antigravity (installed manually, see README)
+[ -d "$HOME/.antigravity/antigravity/bin" ] && export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
+[ -d "$HOME/.antigravity-ide/antigravity-ide/bin" ] && export PATH="$HOME/.antigravity-ide/antigravity-ide/bin:$PATH"

@@ -1,0 +1,10 @@
+[user]
+	name = Gabe Perez
+	email = 1631252+perezgb@users.noreply.github.com
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
